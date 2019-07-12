@@ -1,0 +1,204 @@
+{
+  "id": "2be19018-25a1-47dd-94d4-ff5c1c9fe814",
+  "version": "2.0",
+  "name": "TexteSelenium",
+  "url": "http://www.soastastore.com",
+  "tests": [{
+    "id": "c635200d-e3d7-4f49-a12d-e1f6b223fbb3",
+    "name": "Untitled",
+    "commands": [{
+      "id": "7d1d684e-5ff4-4fea-ae8f-df7e87bd6d8c",
+      "comment": "",
+      "command": "open",
+      "target": "http://34.224.22.205/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0773e992-72db-4bcc-9e29-e9d5620ddf8f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1030x741",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bdffbed6-46ef-41a7-8146-3eb986ba41c5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Store",
+      "targets": [
+        ["linkText=Store", "linkText"],
+        ["css=#menu-item-177 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Store')]", "xpath:link"],
+        ["xpath=//li[@id='menu-item-177']/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://34.224.22.205/?page_id=4']", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Store')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d43cefa-5c24-42f3-9fe0-51f1385cf289",
+      "comment": "",
+      "command": "click",
+      "target": "id=s",
+      "targets": [
+        ["id=s", "id"],
+        ["name=s", "name"],
+        ["css=#s", "css:finder"],
+        ["xpath=//input[@id='s']", "xpath:attributes"],
+        ["xpath=//form[@id='searchform']/div/input", "xpath:idRelative"],
+        ["xpath=//li/form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9fb1e07f-3678-49d8-8ef1-c183d6030575",
+      "comment": "",
+      "command": "type",
+      "target": "id=s",
+      "targets": [
+        ["id=s", "id"],
+        ["name=s", "name"],
+        ["css=#s", "css:finder"],
+        ["xpath=//input[@id='s']", "xpath:attributes"],
+        ["xpath=//form[@id='searchform']/div/input", "xpath:idRelative"],
+        ["xpath=//li/form/div/input", "xpath:position"]
+      ],
+      "value": "glee"
+    }, {
+      "id": "98edf279-2e42-4fb6-b21f-cf04491ec823",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=s",
+      "targets": [
+        ["id=s", "id"],
+        ["name=s", "name"],
+        ["css=#s", "css:finder"],
+        ["xpath=//input[@id='s']", "xpath:attributes"],
+        ["xpath=//form[@id='searchform']/div/input", "xpath:idRelative"],
+        ["xpath=//li/form/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "e7bf2a68-d71e-45a9-af27-723a2f671926",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Glee",
+      "targets": [
+        ["linkText=Glee", "linkText"],
+        ["css=.entry-title > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Glee')]", "xpath:link"],
+        ["xpath=//div[@id='post-164']/h2/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://34.224.22.205/?wpsc-product=glee']", "xpath:href"],
+        ["xpath=//h2/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Glee')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8fbfbad0-3352-46d0-98a9-1b2bfd85f190",
+      "comment": "",
+      "command": "storeText",
+      "target": "id=product_price_164",
+      "targets": [
+        ["id=product_price_164", "id"],
+        ["css=#product_price_164", "css:finder"],
+        ["xpath=//span[@id='product_price_164']", "xpath:attributes"],
+        ["xpath=//form[@id='product_164']/div/p/span", "xpath:idRelative"],
+        ["xpath=//p/span", "xpath:position"],
+        ["xpath=//span[contains(.,'$9.99')]", "xpath:innerText"]
+      ],
+      "value": "precoGlee"
+    }, {
+      "id": "44e9e095-42c5-429f-a44c-c5dd598dc2ef",
+      "comment": "",
+      "command": "click",
+      "target": "css=.single",
+      "targets": [
+        ["css=.single", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d8adb97-f8ef-4bee-8622-ac4a4502bc0f",
+      "comment": "",
+      "command": "click",
+      "target": "id=product_164_submit_button",
+      "targets": [
+        ["id=product_164_submit_button", "id"],
+        ["name=Buy", "name"],
+        ["css=#product_164_submit_button", "css:finder"],
+        ["xpath=//input[@id='product_164_submit_button']", "xpath:attributes"],
+        ["xpath=//form[@id='product_164']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a6af8a49-dbfb-4405-a128-d7f2e9a331f4",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e28abaf-e65d-4b30-8d12-af26d633b003",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Checkout",
+      "targets": [
+        ["linkText=Checkout", "linkText"],
+        ["css=#menu-item-102 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Checkout')]", "xpath:link"],
+        ["xpath=//li[@id='menu-item-102']/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://34.224.22.205/?page_id=5']", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Checkout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "16aa9494-7534-4b75-a437-7963d86373a7",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=td:nth-child(3) > .pricedisplay",
+      "targets": [
+        ["css=td:nth-child(3) > .pricedisplay", "css:finder"],
+        ["xpath=//div[@id='sliding_cart']/div/table/tbody/tr/td[3]/span", "xpath:idRelative"],
+        ["xpath=//td[3]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'$9.99')]", "xpath:innerText"]
+      ],
+      "value": "${precoGlee}"
+    }, {
+      "id": "8f38a50b-58a4-428f-bafb-4fd378b78401",
+      "comment": "",
+      "command": "click",
+      "target": "css=.page-id-5",
+      "targets": [
+        ["css=.page-id-5", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "864f378d-1969-446d-9a68-af245c1c733b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.remove > input:nth-child(4)",
+      "targets": [
+        ["css=.remove > input:nth-child(4)", "css:finder"],
+        ["xpath=(//input[@name='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='checkout_page_container']/table/tbody/tr[2]/td[6]/form/input[4]", "xpath:idRelative"],
+        ["xpath=//td[6]/form/input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "1a3be039-4bb0-4746-b7a3-8bf447949af7",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c635200d-e3d7-4f49-a12d-e1f6b223fbb3"]
+  }],
+  "urls": ["http://www.soastastore.com/"],
+  "plugins": []
+}

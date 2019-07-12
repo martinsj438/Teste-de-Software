@@ -1,0 +1,94 @@
+package br.senac.testeunidade.ex2;
+
+import static org.junit.Assert.*;
+import org.junit.Test;
+
+@Test 
+public void testarInicializacao() {
+	Pilha inicia = new Pilha();
+	inicia.inicializar(5);
+	inicia.vazia();
+}
+
+@Test
+public void verificaEmpilhar() {
+	Pilha inicia = new Pilha();
+	inicia.inicializar(5);
+	inicia.vazia();
+	inicia.empilhar(1);
+	inicia.empilhar(2);
+	inicia.empilhar(3);
+	inicia.vazia();
+}
+
+@Test
+public void verificaDesempilhar() {
+	Pilha inicia = new Pilha();
+	inicia.inicializar(5);
+	inicia.vazia();
+	inicia.empilhar(1);
+	inicia.empilhar(2);
+	inicia.empilhar(3);
+	inicia.vazia();
+	inicia.desempilhar();
+	inicia.desempilhar();
+	inicia.desempilhar();
+	inicia.vazia();
+}
+
+@Test
+public void testarCheia() {
+	Pilha inicia = new Pilha();
+	inicia.inicializar(1);
+	inicia.cheia();
+	inicia.empilhar(1);
+	inicia.empilhar(2);
+	inicia.empilhar(3);
+	inicia.cheia();
+}
+
+@Test
+public void testarVazio() {
+	Pilha inicia = new Pilha();
+	inicia.inicializar(5);
+	inicia.vazia();
+	inicia.empilhar(1);
+	inicia.empilhar(2);
+	inicia.empilhar(3);
+	inicia.vazia();
+}
+
+===========================================================================
+package br.senac.testeunidade.ex1;
+
+public class Triangulo {
+
+	private int a, b, c;
+	private TipoTriangulo tipo;
+	
+	public Triangulo(int a, int b, int c) {
+		this.a = a;
+		this.b = b;
+		this.c = c;
+	}
+
+	public TipoTriangulo retornarTipo() {
+		
+			if(a<b+c && b<a+c && c<a+b) {
+				
+			if (a==b && b==c){
+				return tipo.EQUILATERO;
+			}
+			else if (a==c && b!=c || a==c && c!=b || c==b && b!=a){
+				return tipo.ISOCELES;
+			}
+			else if (a!= b && b !=c) {
+				return tipo.ESCALENO;
+			}
+			else {
+				return tipo.INVALIDO;
+			}
+		}
+		return null;
+	}
+}
